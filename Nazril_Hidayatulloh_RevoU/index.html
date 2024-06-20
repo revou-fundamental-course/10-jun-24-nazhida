@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+                <h2>KALKULATOR KONVERSI SUHU</h2>
+        </header>
+        <nav>
+            <p class="nameprofil">Bang Messi</p>
+            <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUhr8sPjaBZeEaBsDRprFqBiKC2rjNfDr8xw&s">
+        </nav>
+
+        <section>
+              <div>
+                <form>
+                    <label for="celcius">Angka &degC</label><br>
+                    <input type="number" id="celcius" name="celcius" style="border-radius:10px;">
+                </form>
+                <form>
+                    <label for="farenheit">Angka &degF</label><br>
+                    <input type="number" id="farenheit" name="farenheit" style="border-radius:10px;">
+                </form>
+              </div>
+              <div>
+                <form>
+                    <label for="output">Hasil Kalkulasi</label><br>
+                    <textarea id="output" name="output" rows="4" cols="50" readonly>
+                    </textarea>
+                </form>
+              </div>
+              <div>
+                <button onClick="btnC()">
+                    Konversi ke &degF
+                </button>
+                <button onClick="btnF()">
+                    Konversi ke &degC
+                </button>
+              </div>
+        </section>
+        <article>
+            <div class="final">
+                <h2 style="text-decoration-line:underline; ">Rumus Konversi</h2>
+            </div>
+            <div class="rumus">
+                <h3 style="margin:0;">&degF ===> &degC</h3>
+                <a>T(&degF) = (&degC . 1,8) + 32</a>
+                <h5>Dan</h5>
+                <h3 style="margin:0;">&degC ===> &degF</h3>
+                <a> T(&degC) = 5/9 . (&degF - 32)</a>
+            </div>
+        </article>
+        <script src="js/javascript.js">
+        </script>
+    </body>
+</html>
